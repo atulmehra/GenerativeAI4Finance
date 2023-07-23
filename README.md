@@ -57,7 +57,7 @@
     - AI Co-Pilot for traders to answer queries in natural language such as
         - "Which are the trades executed today"
         - "Which stocks had the highest spread today"
-    - "AI Co-pilot suggesting trading signals"
+    - AI Co-pilot suggesting trading signals
   ### IT & Support
     - Natural language Queries for your knowledge base from JIRA, Sharepoint, Confluence, Notion or other
     - Convert your emails to be searchable
@@ -70,8 +70,8 @@
     - Monetize by creating your own proprietory Large Language Model based on financial and trading news to be used internally or commercialized to external clients
     -  Create your proprietory financial data based foundational model. Like GPT models work on audio text, video - this model works for financial data & decsion making
     - Adapt investment banking systems with Generative AI 4 Finance for Invoice Exchange & Supply chain Finance to create world's most advanced Invoice Exchange. Read Related 
-      - [Mastercard partners with M1Exchange] (https://www.mastercard.com/news/ap/en-in/newsroom/press-releases/en-in/2023/april/mastercard-collaborates-with-m1xchange-to-roll-out-digital-invoice-discounting-solution-for-fpos-and-agri-msmes-via-farm-pass/)
-      - [Barclays & Santander invest in MarketInvoice] (https://www.cnbc.com/2019/01/21/barclays-and-santander-back-marketinvoice-funding.html/)
+      [Mastercard partners with M1Exchange] (https://www.mastercard.com/news/ap/en-in/newsroom/press-releases/en-in/2023/april/mastercard-collaborates-with-m1xchange-to-roll-out-digital-invoice-discounting-solution-for-fpos-and-agri-msmes-via-farm-pass/)
+      [Barclays & Santander invest in MarketInvoice] (https://www.cnbc.com/2019/01/21/barclays-and-santander-back-marketinvoice-funding.html/)
 
  ## Wealth Management
 
