@@ -1,31 +1,47 @@
 # GenerativeAI4Finance — Contributing Guide
+Welcome to GenerativeAI4Finance! Imagine upgrading the existing stack of the bank with GenAI layer or starting entirely new stack. This repository brings together latest advancements on top of bank's existing stack. Open-source work for entire bank with advanced World Models, AI/ML models, application, Tools, Governance & more. 
+A full stack on financial AI datasets, evaluations, benchmarks, tools and reference implementations. Initial focus areas include Enhanced Due Diligence (EDD), Swarm AI risk in financial services, World Models for Finance, GNPA/credit risk, cyber resilience, developer infrastructure and regulatory intelligence.
 
-Welcome to GenerativeAI4Finance! This repository brings together open-source work on financial AI datasets, evaluations, benchmarks, tools and reference implementations. Initial focus areas include Enhanced Due Diligence (EDD), Swarm AI risk in financial services, World Models for Finance, GNPA/credit risk, cyber resilience, developer infrastructure and regulatory intelligence.
+**Contribution principle:** Fork Repo -> Pick One focused task → implementation or research → tests/validation → basic documentation → Open one pull request.
+Tasks are listed below. Further below is description of the task.
 
-**Contribution principle:** one focused task → implementation or research → tests/validation → documentation → one pull request.
+
+**Contribution Profiles:Benefits of contributing**
+| Contributor profile | What you can gain | Suitable contribution areas |
+|---|---|---|
+| **Interns and students** | Improve resume, Work on distinctive AI work, Job hunt, Remote internship & exposure to industry | Exposure to possible career paths. | Easy / good-first tasks, schemas, checklists, dataset cards, source registers, documentation and validation tests. |
+| **Startup Teams** | Collaborate, fork, reuse & offer your repos for reuse; Showcase & get an extnded team for delivering to your clients | Exposure to possible career paths. | Easy / good-first tasks, schemas, checklists, dataset cards, source registers, documentation and validation tests. |
+| **Working professionals, engineers, Job hunters** | Improve resume, Know more than your colleagues on what's latest, use in promotion profiles; Deeper Financial AI skills; Showcase for lateral job enteries & references; A public technical track record; cross-functional collaboration; experience with maintainable, review-ready open-source engineering. | Data pipelines, benchmark components, evaluation suites, CI, reproducibility tooling and reference implementations. |
+| **Researchers and data scientists** | Work & align with your research that can be commercialized later, Refer & contribute in research papers, Job profiles & resumes, Reproducible research artefacts; opportunities to define methodology and metrics; documented assumptions and limitations; visibility for datasets, baselines and evaluation methods. | Synthetic data, temporal validation, causal-intervention scenarios, calibration, benchmark scorecards and EDD evaluation. |
+| **Enterprise architects and technical leaders** | Opportunities to shape reference architectures, interfaces and industry standards; Showcase to your management new ideas, Generate Alpha over others to get to next stage in career, practical application of architecture experience; influence on shared technical foundations; visible evidence of technical leadership. Get team of FDEs | System design, agent permissions, benchmark architecture, containerisation, reproducible CLIs, data contracts and CI design. |
+| **Banking, risk, compliance and regulatory professionals** | A way to translate domain expertise into practical tools and evaluation criteria; opportunities to identify edge cases and workflow constraints; reusable public resources based on non-confidential knowledge. | EDD checklists, GNPA target definitions, regulatory source registers, dataset cards and evaluation criteria. Never submit confidential institutional information. |
+| **Cybersecurity and AI safety professionals** | Opportunities to advance defensive evaluation, test system boundaries, document mitigations and improve repeatability of security tests. | Defensive incident taxonomies, synthetic scenarios, least-privilege controls, prompt-injection resistance tests and benchmark scorecards. Work must remain within the project's defensive scope. |
+| **Enterprises and technology teams** | Get FDEs, Opportunities to collaborate on shared problems, contribute reusable resources and inspect open evaluation methods against their own requirements. | Generalisable tools, test cases, documentation, reference implementations and permitted synthetic/public examples. Ensure contributions are authorised by your organisation; do not submit proprietary code or data without permission. 
+
+
 
 ## Open contribution tasks
 
 Choose a task from the index below, then read its full specification in the relevant workstream further down this file. Difficulty and role are guides; you do not need to understand the entire repository to contribute.
 
-| Task ID | Task | Difficulty | Suggested role |
+| Task ID | Task | Difficulty | Suggested role | Status | Contribution by
 |---|---|---|---|
-| `G4F-EDD-001` | Define the EDD case data schema | Easy | Data / Backend Intern |
-| `G4F-EDD-002` | Build a source and evidence record format | Easy | Research / Data Intern |
+| `G4F-EDD-001` | Define the EDD case data schema | Easy | Data / Backend Intern | MERGED | @richabansal123 |
+| `G4F-EDD-002` | Build a source and evidence record format | Easy | Research / Data Intern | PR_SUBMITTED | @richabansal123 |
 | `G4F-EDD-003` | Create an EDD review checklist | Easy | Financial Research Intern |
 | `G4F-EDD-004` | Build a synthetic EDD case dataset | Medium | Data Engineer / Researcher |
-| `G4F-EDD-005` | Implement entity resolution for company records | Medium | Python Engineer / Data Scientist |
+| `G4F-EDD-005` | Implement entity resolution for company records | Medium | Python Engineer / Data Scientist | PR_SUBMITTED | @GODOSTROYER
 | `G4F-EDD-006` | Build a source-backed finding extractor | Medium | NLP / LLM Engineer |
 | `G4F-EDD-007` | Add contradiction and stale-evidence checks | Medium | Data / Backend Engineer |
 | `G4F-EDD-008` | Generate an auditable EDD report | Medium | Backend / Reporting Engineer |
 | `G4F-EDD-009` | Evaluate EDD extraction quality | Medium | Evaluation / Data Science Intern |
-| `G4F-EDD-010` | Add EDD human-review and audit trail | Medium | Backend Engineer / Governance Researcher |
+| `G4F-EDD-010` | Add EDD human-review and audit trail | Medium | Backend Engineer / Governance Researcher | PR_SUBMITTED | @GODOSTROYER
 | `G4F-SW-001` | Define a Swarm AI threat and capability taxonomy | Easy | Cybersecurity / Research Intern |
 | `G4F-SW-002` | Define the EDD swarm simulation scenario format | Easy | Python / QA Intern |
 | `G4F-SW-003` | Build a multi-agent EDD baseline | Medium | Agent Engineer |
 | `G4F-SW-004` | Test evidence contamination and prompt injection resistance | Medium | AI Security Engineer |
 | `G4F-SW-005` | Measure coordination failure and correlated errors | Medium | Evaluation Engineer / Researcher |
-| `G4F-SW-006` | Implement least-privilege tool permissions for agents | Medium | Backend / Security Engineer |
+| `G4F-SW-006` | Implement least-privilege tool permissions for agents | Medium | Backend / Security Engineer | PR_SUBMITTED | @GODOSTROYER |
 | `G4F-SW-007` | Create a Swarm AI + EDD benchmark scorecard | Medium | Benchmark / Research Engineer |
 | `G4F-WM-001` | Define the financial event and state schema | Easy | Data Engineering Intern |
 | `G4F-WM-002` | Create a synthetic borrower and loan-state generator | Medium | Data Scientist / Data Engineer |
@@ -34,9 +50,9 @@ Choose a task from the index below, then read its full specification in the rele
 | `G4F-WM-005` | Document dataset provenance, licensing and limitations | Easy | Research / Data Governance Intern |
 | `G4F-WM-006` | Build an event-to-state transition dataset | Medium | Financial Modelling / Data Engineer |
 | `G4F-WM-007` | Build causal intervention scenarios | Hard | Quantitative Researcher / World Model Researcher |
-| `G4F-WM-008` | Create benchmark splits and leakage tests | Medium | ML Engineer / Data Engineer |
+| `G4F-WM-008` | Create benchmark splits and leakage tests | Medium | ML Engineer / Data Engineer | PR_SUBMITTED | @GODOSTROYER |
 | `G4F-WM-009` | Build a baseline financial state predictor | Medium | ML Engineer |
-| `G4F-WM-010` | Evaluate scenario prediction and calibration | Hard | ML Evaluation / Quantitative Researcher |
+| `G4F-WM-010` | Evaluate scenario prediction and calibration | Hard | ML Evaluation / Quantitative Researcher | PR_SUBMITTED | @GODOSTROYER |
 | `G4F-GNPA-001` | Define an early-warning prediction target | Medium | Credit Risk Researcher |
 | `G4F-GNPA-002` | Generate synthetic credit-risk labels | Medium | Data Scientist |
 | `G4F-GNPA-003` | Implement credit-risk benchmark metrics | Easy | Python / Evaluation Intern |
@@ -52,81 +68,6 @@ Choose a task from the index below, then read its full specification in the rele
 | `G4F-REG-001` | Create a regulatory source register | Easy | Regulatory Research Intern |
 | `G4F-REG-002` | Build a regulatory document metadata extractor | Medium | Python / NLP Engineer |
 | `G4F-REG-003` | Track regulatory changes with human verification | Medium | Data / Regulatory Technology Engineer |
-
-## What contributors gain — by contributor profile
-
-GenerativeAI4Finance welcomes contributors at different career stages. Choose a task that matches your experience and the time you can commit. The benefits below are opportunities, not guarantees; they depend on the work completed, review outcomes and project policy.
-
-### For interns and students
-
-- **Build real project experience:** work on clearly scoped tasks in financial AI, datasets, benchmarks, documentation or regulatory research.
-- **Create a verifiable portfolio:** show reviewed pull requests, tests, research notes, schemas or sample datasets in your public GitHub profile.
-- **Learn professional workflows:** practise Git branching, issue tracking, code review, testing, documentation and reproducible work.
-- **Explore career paths:** gain exposure to AI engineering, data engineering, fintech, model evaluation, cybersecurity and financial research.
-- **Get feedback:** use maintainer and peer review to improve your implementation and technical communication.
-
-*Good starting points:* tasks marked **Easy** or **Good first task**, such as schemas, checklists, dataset cards, source registers and validation tests.
-
-### For working professionals and engineers
-
-- **Demonstrate applied expertise:** contribute reusable implementations, tests, data pipelines, evaluation tools or infrastructure.
-- **Deepen skills in Financial AI:** work on EDD, credit-risk benchmarks, World Models for Finance, agent evaluation, AI security or regulatory intelligence.
-- **Build a public technical track record:** link to the specific code, documentation and results you contributed.
-- **Collaborate across disciplines:** work with researchers and practitioners in software, finance, risk, security and governance.
-- **Practise open-source engineering:** improve modularity, maintainability, reproducibility and review-ready delivery.
-
-*Good starting points:* medium-difficulty engineering tasks, benchmark components, evaluation suites, CI, reproducibility tooling and focused reference implementations.
-
-### For researchers and data scientists
-
-- **Turn ideas into reproducible artefacts:** contribute datasets, benchmark definitions, baselines, evaluation metrics and experiment reports.
-- **Make assumptions explicit:** document methodology, limitations, data provenance and failure cases.
-- **Compare approaches fairly:** help define repeatable tests and metrics for financial AI systems.
-- **Increase research visibility:** make methods and results inspectable through public, version-controlled contributions.
-
-*Good starting points:* synthetic data generation, temporal validation, causal-intervention scenarios, calibration, benchmark scorecards and EDD evaluation.
-
-### For enterprise architects and technical leaders
-
-- **Shape reference architectures:** contribute modular designs, interface contracts, data schemas, deployment patterns and reproducibility standards.
-- **Apply architecture experience to meaningful problems:** help address auditability, least privilege, human review, data boundaries and integration across components.
-- **Influence shared technical foundations:** propose designs that others can implement, test and build upon.
-- **Demonstrate thought leadership through implementation:** contribute architecture decision records, diagrams, technical reviews and working reference designs—not just high-level opinions.
-
-*Good starting points:* system design, agent permission models, benchmark architecture, containerisation, reproducible CLIs, data contracts and CI design.
-
-### For banking, risk, compliance and regulatory professionals
-
-- **Bring domain knowledge into practical tools:** help define credit-risk targets, EDD workflows, evidence standards, regulatory metadata and human-review requirements.
-- **Improve relevance and reliability:** identify edge cases, misleading metrics, workflow constraints and assumptions engineers may overlook.
-- **Make evaluations more meaningful:** contribute review checklists, test scenarios, acceptance criteria and documented limitations.
-- **Help build reusable resources:** turn domain expertise into public schemas, guidance and benchmark specifications.
-
-*Good starting points:* EDD checklists, GNPA target definitions, regulatory source registers, dataset cards and evaluation criteria. Do not submit confidential institutional information.
-
-### For cybersecurity and AI safety professionals
-
-- **Advance defensive evaluation:** help define threat taxonomies, controlled test scenarios, detection criteria and mitigation approaches.
-- **Test system boundaries:** contribute permission checks, prompt-injection resistance tests, evidence integrity checks and incident artefacts.
-- **Improve repeatability:** make security tests isolated, documented and safe to rerun.
-
-*Good starting points:* defensive incident taxonomies, synthetic scenarios, least-privilege controls and benchmark scorecards. Work must remain within the project's defensive scope.
-
-### For enterprises and technology teams
-
-- **Collaborate on shared problems:** contribute generalisable tools, test cases, documentation or reference implementations relevant to financial AI.
-- **Learn from open evaluation:** inspect documented methods, assumptions and limitations and compare them with your own requirements.
-- **Support ecosystem development:** contribute engineering time, domain review or permitted synthetic/public examples that help improve shared resources.
-
-Contributions must be authorised by the contributor's organisation where required. Do not submit proprietary code, confidential data, customer records or intellectual property without explicit permission. A contribution does not imply endorsement, certification or a production-ready solution.
-
-### Recognition, bounties and opportunities
-
-Contributors can build a public record of their work through merged pull requests and other accepted artefacts. Any acknowledgements, contributor listings, certificates, references, internships, employment or commercial opportunities are subject to project policy, availability and maintainer approval; none is guaranteed.
-
-**Bounties are task-specific, not automatic.** A funded issue must state the amount, currency, eligibility, deliverables, review criteria and payment conditions. Do not assume payment unless a maintainer confirms the terms in writing before work begins. Unless explicitly agreed otherwise, contributions are unpaid.
-
-The strongest contribution is one that solves a clearly defined problem, includes appropriate validation, documents its limitations and can be understood and reused by others.
 
 ## Start here: fork the repository first
 
